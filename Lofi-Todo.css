@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#SoundLoop {
+display: flex;
+}
+
+body {
+    background-image: url(https://c.tenor.com/V6BlTNHiHiAAAAAC/lofi-hiphop.gif);
+    color: #ffbca9;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 2.5rem;
+}
+
+header,form{
+    min-height: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    padding: 0.2rem;
+    font-size: 2rem;
+    border: none;
+    background: whitesmoke;
+    
+}
+
+form button{
+    color: whitesmoke;
+    background: #abc535;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form button:hover{
+    background: whitesmoke;
+    color: #abc535;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    background: whitesmoke;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo li{
+    flex: 1; 
+    transition: all 0.7sec ease;
+}
+
+.complete-btn {
+    background-color: #abc535 ;
+    color: whitesmoke;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.trash-btn {
+    background-color: #f15656 ;
+    color: whitesmoke;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash, .fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    color: #abc535;
+    width: 10rem;
+    cursor: pointer;
+    padding: 0.8rem;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background-color: #abc535;
+    top: 0;
+    right: 0;
+    padding: 0.8rem;
+    pointer-events: none;
+}
+
+.select:hover::after {
+    background-color: whitesmoke;
+    color: #abc535;
+}
